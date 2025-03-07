@@ -1,0 +1,43 @@
+1.
+create database  mybase;
+use mybase;
+create table emp like hr.employees;
+insert into emp select * from hr.employees;
+2.
+alter table emp 
+add Permanent_Addrees varchar(50);
+3.
+ alter table emp
+drop column Permanent_Addrees;
+4.
+ALTER TABLE your_table_name
+ADD "House No" VARCHAR(50),
+    "Street No" INT,
+    "Area" VARCHAR(100),
+    "City" VARCHAR(100);
+5.
+alter table emp modify HouseNo int;
+
+6. 
+create table faculty (facultyid int primary key,
+faculty_name varchar(25)); 
+part(b)
+create table course
+(courseid char (8) primary key,
+coursename varchar (25));
+
+7.
+create table student
+(ID int primary key,
+age int ,
+Gender varchar (30));
+alter table student  add (class varchar(30));
+
+8.
+rename table departments to dept;
+rename table dept to departments;
+9.
+alter table locations add(region_id int);
+10.
+alter table locations 
+change column state_province state varchar(255);
